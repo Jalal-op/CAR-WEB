@@ -33,61 +33,58 @@ body{
 /*---HOME---*/
 #home{
   background-color: #ccc;
+  background-image: url(img/home1.jpg);
   background-size: cover;
   width: 100%;
   height: 73vh;
 }
 #home .content{
-    text-align: center;
-    margin-top: 20px;
+	margin-top: 8%;
+	margin-left: 18px;
+
 }
-#home h1{
-  font-size: 50px;
-  font-weight: bold;
+#home h1 {
+  font-size: 4rem;
+  color: #000;
+  animation-delay: 1s;
 }
 
-.imge{
-  margin-top: 5%;
+#home h2{
+	font-size: 4rem;
+	color: crimson;
+
 }
-#home img{
-  height: 40vh;
-  width: 100%;
-  transform: translateX(0px) translateY(0px);
+#home h2 span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: crimson;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
 }
-#home img:hover{
-  transform: translateX(0px) translateY(0px);
-}
-.btn-secondary{
-  background-color: #7f00ff;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
+.cta{
+  padding: 12px 20px;
+  background: crimson;
   border: none;
   color: white;
-  padding: 12px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
   transition: all .3s ease-in;
-  letter-spacing: 1px; 
 }
-.btn-secondary:hover{
+.cta:hover{
   background: transparent;
-  color: #7f00ff;
-  border: 2px solid #7f00ff;
+  color: #000;
+  border: 2px solid crimson;
 }
 
-#vehicles{
-  flex-basis:80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
+#category{
   border-radius: 10px;
-  background-color: papayawhip;
+  background-image: papayawhip;
   background-size: cover;
-  margin: 10px 5%;
-  z-index: 1;
-  overflow: hidden;
 }
 
 .contentt{
@@ -98,12 +95,14 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-#vehicles .vehicles-card{
+#category .category-card{
   width: 100%;
   padding: 60px 0px;
+  height: 20%;
 }
 
-#vehicles .card{
+#category .card{
+  
   border: none;
   box-shadow: 0px 4px 4px 0px #000;
   border-radius: 8mm;
@@ -111,16 +110,16 @@ body{
   text-align: center;
 }
 
-#vehicles .card:hover{
+#category .card:hover{
   background: #fff;
   box-shadow: 3px 3px 10px 6px #6e6b6b;
 }
 
-#vehicles.card img{
+#category.card img{
   align-items: center;
 }
 
-#vehicles .card-img-top{
+#category .card-img-top{
   border-top-left-radius: calc(1.25rem - 1px);
   border-top-right-radius: calc(1.25rem - 1px);
   margin-top: -20px;
@@ -135,8 +134,8 @@ body{
   font-size: 16px;
   color: #3d2514;
 }
-#vehicles .btn-primary{
-  background-color: #7f00ff;
+#category .btn-primary{
+  background-color: crimson;
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
@@ -149,10 +148,10 @@ body{
   margin-top: 15px;
 }
 
-#vehicles .btn-primary:hover, #vehicles .btn-primary:focus{
+#category .btn-primary:hover, #category .btn-primary:focus{
   background: transparent;
-  color: #7f00ff;
-  border: 2px solid #7f00ff;
+  color: #000;
+  border: 2px solid crimson;
 }
 
 /*----ABOUT----*/
@@ -160,24 +159,22 @@ body{
   position: relative;
   background-color: #fff;
   width: 100%;
-  height: 87vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(img/about.jpg);
 }
 .content{
   justify-content: center;
   align-items: center;
-  margin-top:30%;
+  margin-top:10%;
 }
 #about h2{
-  color: #a00001;
+  color: crimson;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bolder;
   letter-spacing: normal;
-}
-#about h4{
-  color: #000;
-  text-align: center;
 }
 #about p{
   color: #000;
@@ -192,122 +189,132 @@ body{
   justify-content: center;
 }
 
-.img-content{
-  margin-top: 10%;
-}
-
 .cardz{
   text-align: center;
 }
-#manu{
+#reviews{
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-color: papayawhip;
 	background-size: cover;
-  margin-top: 30%;
 }
-#manu h1{
-	color: #ff6221;
-	text-align: center;
-	font-weight: 700;
-	font-size: 31.5px;
-	font-family: sans-serif;
-	letter-spacing: normal;
-	padding-top: 6%;
+.snip1533 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 13rem 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid crimson;
 }
-#manu p{
-	color: #b2aeac;
-	letter-spacing: normal;
-	text-align: center;
-	font-family: sans-serif;
-	font-weight: 600;
-	margin-bottom: 5rem;
 
+.snip1533 *,
+.snip1533 *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
-#manu .main{
-	width: 60%;
-    margin-left:auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-	
-}
-#manu .box-container{
-	display: flex;
-	flex-wrap: wrap;
-	margin:1.5rem;
-	width: 12px;
 
+.snip1533 figcaption {
+  padding: 13% 10% 12%;
 }
-#manu .box-container .box{
 
-	text-align: center;
-	padding: 1.5rem 1.5rem 0rem 1.5rem;
-	border-radius: 8.5px;
-	background-color: #f5d9d0;
-	
-	flex:1;
-}
-#manu .box-container .box img{
-	 width: 8rem;
-  height: 8rem;
+.snip1533 figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
   border-radius: 50%;
-  margin-top: -6rem;
-  object-fit: cover;
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: crimson;
+  content: "\f10e";
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
 }
-#manu .box-container .box h3{
-	color: #000;
-	text-align: center;
+
+.snip1533 h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip1533 h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.snip1533 blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+#discount{
+	position: relative;
+	background-image: url(img/Discount1.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	
+	background-size: cover;
+}
+#discount .contentt{
+	margin-top: 48%;
+}
+#discount h5{
+	margin-left: 2%;
+	color: crimson;
+	font-size: 45px;
 	font-weight: 600;
-	font-size:  medium;
-	font-family: sans-serif;
 }
-#manu .box-container .box p{
+#discount h2{
+	margin-left: 2%;
 	color: #000;
-	text-align: center;
-	font-size: 9px;
-	font-weight: 500;
-	font-family: sans-serif;
-	margin-bottom: 0px;
-}
-#manu .box-container .box  h4{
-	color: #000;
-	text-align: left;
-	font-family: sans-serif;
-	font-size: 17px;
+	letter-spacing: normal;
+	font-size: 35px;
 	font-weight: 600;
+}
+
+.img-content{
+  margin-top: 45%;
+}
+#discount img{
+  width: 90%;
+  border-radius: 8mm;
+  margin-left: 55px ;
 }
 
 /* The colour of the indicators */
 .contentt h1{
   text-align: center;
   margin-bottom: 4%;
-}
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-}
-
-.blog .carousel-indicators .active {
-background: #707070;
-}
-.contact .row{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
 }
 
 #contact{
   position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	background-color: #ccc;
+	background-color: papayawhip;
 	background-size: cover;  
   padding: 2rem 9%;
 }
@@ -317,14 +324,14 @@ background: #707070;
 	padding-top: 75px;
 }
 #contact h1{
-	color: #ff6221;
+	color: #000;
 	text-align: center;
-	font-weight: 700;
-	font-size: 31.5px;
+	font-weight: bold;
+	font-size: 40.5px;
 	letter-spacing: normal;
 }
 #contact  p{
-	color: #b2aeac;
+	color: crimson;
 	letter-spacing: normal;
 	text-align: center;
 	font-weight: 600;
@@ -370,4 +377,70 @@ background: #707070;
   border-radius: 3px;
   width: 98%;
   resize: none;
+}
+footer {
+  padding: 7em 0; 
+}
+
+.footer-07 {
+  background: #121212;
+  height: 65vh; 
+}
+.footer-07 a {
+  color: #fff; 
+}
+.footer-07 p {
+  color: rgba(255, 255, 255, 0.3); 
+}
+.footer-07 .footer-heading {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer-07 .footer-heading .logo {
+  color: #fff; 
+}
+.footer-07 .menu {
+  margin-bottom: 30px; 
+}
+.footer-07 .menu a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-07 .ftco-footer-social li a {
+  background: transparent;
+  border: 1px solid #a3de83;
+}
+
+
+#promax{
+  background-image: url(img/Discount.jpg);
+  width: 100%;
+  height: 100vh;
+
+}
+.pro{
+  margin-top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 6rem;
+  color: #fff;
+  animation-delay: 1s;
+
+}
+.pro h3{
+  font-size: 6rem;
+  font-weight: bold;
+  color: #000;
+}
+#promax p{
+  font-size: 25px;
+
 }
