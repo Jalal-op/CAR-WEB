@@ -417,30 +417,25 @@ footer {
 
 
 #promax{
-  background-image: url(img/Discount.jpg);
+  background-image: url(img/a77ff4c017e2a282e9ebf9ce3919caac.jpg);
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 .pro{
-  margin-top: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
+  margin-top: 22%;
   text-align: center;
-  font-weight: bold;
-  font-size: 6rem;
-  color: #fff;
-  animation-delay: 1s;
-
 }
 .pro h3{
   font-size: 6rem;
   font-weight: bold;
-  color: #000;
+  color: crimson;
 }
 #promax p{
   font-size: 25px;
+  color: #000;
+  font-weight: bold;
 
 }
