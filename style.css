@@ -383,7 +383,7 @@ iframe{
   font-size: 30px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .footer-07 .footer-heading .logo {
   color: #fff; 
@@ -427,18 +427,43 @@ iframe{
 
 
 @media only screen and (max-width: 425px){
+  #home .content{
+    margin-top: 30%;
+    margin-left: 8px;
+  }
   #discount{
     height: unset;
+  }
+  #discount .contentt {
+    margin-top: 8%;
+  }
+  #discount img {
+  margin-left: 20px;
+  }
+  #reviews{
+    height: unset;
+  }
+  .client-review {
+    margin: 13rem 5px 10px;
   }
   #contact{
     height: unset;
     padding: unset;
   }
   iframe{
-    width: 16rem;
+    width: 13rem;
   }
   .footer-07{
     height: unset;
+  }
+  #CATEGORIES{
+    height: unset;
+  }
+  .pro{
+    margin-top: 30%;
+  }
+  .pro h3{
+    font-size: 4rem;
   }
 
 }
