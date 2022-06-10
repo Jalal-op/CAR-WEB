@@ -21,11 +21,11 @@ body{
   font-family: 'Nunito',sans-serif;
   color: white !important;
 }
-.navbar-nav ul{
+.nav-item .nav-link{
   font-size: 16px;
   color: red;
 }
-.navbar .navbar-nav li a :hover{
+.navbar .nav-link :hover{
   color: yellow;
 }
 
@@ -345,9 +345,17 @@ body{
 	font-weight: 600;
 	margin-left: 2rem;
 }
+iframe{
+  border-radius:4mm;
+  width: 25rem;
+  height: 37vh;
+  box-shadow: 0px 2px 2px black;
+}
+
+/*----Footer----*/
 .footer-07 {
   background: #121212;
-  height: 65vh; 
+  height: 35vh; 
 }
 .footer-07 a {
   color: #fff; 
@@ -378,14 +386,12 @@ body{
   border: 1px solid #a3de83;
 }
 
-
 #CATEGORIES{
   background-image: url(img/a77ff4c017e2a282e9ebf9ce3919caac.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .pro{
   margin-top: 22%;
@@ -396,9 +402,26 @@ body{
   font-weight: bold;
   color: crimson;
 }
-#promax p{
+#CATEGORIES p{
   font-size: 25px;
   color: #000;
   font-weight: bold;
+}
+
+
+@media only screen and (max-width: 425px){
+  #discount{
+    height: unset;
+  }
+  #contact{
+    height: unset;
+    padding: unset;
+  }
+  iframe{
+    width: 16rem;
+  }
+  .footer-07{
+    height: unset;
+  }
 
 }
