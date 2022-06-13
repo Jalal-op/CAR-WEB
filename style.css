@@ -144,7 +144,7 @@ body{
 }
 .btnn{
   padding: 12px 20px;
-  background: rgb(20, 220, 70);
+  background: crimson;
   border: none;
   color: white;
   border-radius: 30px;
@@ -156,7 +156,7 @@ body{
 .btnn:hover{
   background: transparent;
   color: #000;
-  border: 2px solid rgb(20, 220, 70);
+  border: 2px solid crimson;
 }
 
 /*----ABOUT----*/
@@ -174,14 +174,14 @@ body{
   margin-top:10%;
 }
 #about h2{
-  color: crimson;
+  color: #000;
   text-align: center;
   font-size: 30px;
   font-weight: bolder;
   letter-spacing: normal;
 }
 #about p{
-  color: #000;
+  color: #fff;
   font-size: 15px;
   text-align: center;
   font-weight: 700;
@@ -196,7 +196,6 @@ body{
 }
 #reviews h1{
   text-align: center;
-  margin-top: 5%  ;
 }
 .client-review {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -289,10 +288,11 @@ body{
 }
 
 .img-content{
-  margin-top: 45%;
+  margin-top: 20%;
 }
 #discount img{
   width: 90%;
+  height: 72vh;
   border-radius: 8mm;
   margin-left: 55px ;
 }
@@ -427,8 +427,11 @@ iframe{
 
 @media only screen and (max-width: 425px){
   #home .content{
-    margin-top: 30%;
+    margin-top: 44%;
     margin-left: 8px;
+  }
+  #home h1,h2{
+    font-size: 3rem;
   }
   .contentt{
     margin-top: 30%;
@@ -439,6 +442,9 @@ iframe{
     margin-left: auto;
     margin-right: auto;
 }
+  #about{
+    height: unset;
+  }
   #discount{
     height: unset;
   }
