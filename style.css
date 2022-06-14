@@ -492,6 +492,9 @@ iframe{
   }
 }
 @media only screen and (max-width: 320px){
+  #home .content{
+    margin-top: 55%;
+   }
   #home h1{
     font-size: 3rem;
    } 
