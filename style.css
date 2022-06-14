@@ -482,23 +482,6 @@ iframe{
 
 }
 
-@media only screen and (max-width: 320px){
- #home h1{
-   font-size: 3rem;
-  } 
-  #home h2{
-    font-size: 3rem;
-  }
- #category .category-card {
-  width: 90%;
-  }
-  .client-review {
-    margin: 20rem 4px 0px;
-  }
-  iframe {
-    width: 13rem;
-  }
-}
 
 @media only screen and (max-width: 375px){
   iframe {
@@ -506,5 +489,22 @@ iframe{
   }
   .client-review {
     margin: 13rem 32px 10px;
+  }
 }
-}
+@media only screen and (max-width: 320px){
+  #home h1{
+    font-size: 3rem;
+   } 
+   #home h2{
+     font-size: 3rem;
+   }
+  #category .category-card {
+   width: 90%;
+   }
+   .client-review {
+     margin: 13rem 0px 10px;
+   }
+   iframe {
+     width: 13rem;
+   }
+ }
