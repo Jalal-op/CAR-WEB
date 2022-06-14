@@ -423,7 +423,24 @@ iframe{
   color: #000;
   font-weight: bold;
 }
-
+@media only screen and (max-width: 768px){
+  iframe {
+    width: 20rem;
+  }
+  #reviews{
+    height: unset;
+  }
+  #about{
+    height: unset;
+  }
+  #contact{
+    height: unset;
+    padding: unset;
+  }
+  .footer-07{
+    height: unset;
+  }
+}
 
 @media only screen and (max-width: 425px){
   #home .content{
